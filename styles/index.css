@@ -151,18 +151,19 @@ section#hero {
   max-width: 1200px;
   margin: auto;
   opacity: 0;
-  transform: translateY(30px);
+  transform: translateY(6rem);
   transition: all 0.7s ease-out;
 }
 
 section#hero.visible {
   opacity: 1;
-  transform: translateY(0);
+  transform: translateY(4rem);
 }
 
 #hero {
-  background: url("https://images.unsplash.com/photo-1581579185169-9a054b3fbb0d?auto=format&fit=crop&w=1600&q=80")
-    center/cover no-repeat;
+  background: url("../ressources/images/hero.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
   height: 100vh;
   display: flex;
   align-items: center;
