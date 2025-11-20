@@ -12,20 +12,6 @@ body {
   overflow-x: hidden;
 }
 
-section {
-  padding: 6rem 2rem;
-  max-width: 1200px;
-  margin: auto;
-  opacity: 0;
-  transform: translateY(30px);
-  transition: all 0.7s ease-out;
-}
-
-section.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
 .btn {
   background: #ffc107;
   color: #000;
@@ -160,6 +146,19 @@ div.nav_mobile {
 }
 
 /********************************hero************************/
+section#hero {
+  padding: 6rem 2rem;
+  max-width: 1200px;
+  margin: auto;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.7s ease-out;
+}
+
+section#hero.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
 
 #hero {
   background: url("https://images.unsplash.com/photo-1581579185169-9a054b3fbb0d?auto=format&fit=crop&w=1600&q=80")
