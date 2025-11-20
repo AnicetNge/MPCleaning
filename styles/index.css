@@ -148,7 +148,7 @@ div.nav_mobile {
 /********************************hero************************/
 section#hero {
   padding: 6rem 2rem;
-  max-width: 1200px;
+  max-width: 1600px;
   margin: auto;
   opacity: 0;
   transform: translateY(6rem);
@@ -163,8 +163,9 @@ section#hero.visible {
 #hero {
   background: url("../ressources/images/hero.jpg");
   background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: calc(100vh - 4rem);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -198,4 +199,10 @@ section#hero.visible {
   font-size: 1.2rem;
   margin-bottom: 2rem;
   animation: fadeInUp 1s ease-out;
+}
+
+@media (min-width: 768px) {
+  #hero {
+    background-size: contain;
+  }
 }
