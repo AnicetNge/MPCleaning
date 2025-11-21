@@ -232,7 +232,7 @@ section#services.visible {
   display: flex;
   flex-direction: column;
   width: 360px;
-  
+
   background: #fff;
 
   border-radius: 10px;
@@ -267,4 +267,27 @@ section#services.visible {
   .service {
     width: 98%;
   }
+}
+
+/********about***********************************/
+section#about {
+  padding: 6rem 2rem;
+  max-width: 1600px;
+  margin: auto;
+  opacity: 0;
+  transform: translateY(6rem);
+  transition: all 0.7s ease-out;
+}
+
+section#about.visible {
+  opacity: 1;
+  transform: translateY(4rem);
+}
+#about {
+  text-align: center;
+}
+
+#about p {
+  max-width: 700px;
+  margin: 1rem auto;
 }
