@@ -203,6 +203,6 @@ section#hero.visible {
 
 @media (min-width: 768px) {
   #hero {
-    background-size: contain;
+    background-size: cover;
   }
 }
