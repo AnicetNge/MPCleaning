@@ -161,7 +161,7 @@ section#hero.visible {
 }
 
 #hero {
-  background: url("../ressources/images/hero.jpg");
+  background: url("../ressources/images/hero.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -207,6 +207,19 @@ section#hero.visible {
   }
 }
 /*****************services***********************************/
+section#services {
+  padding: 6rem 2rem;
+  max-width: 1600px;
+  margin: auto;
+  opacity: 0;
+  transform: translateY(6rem);
+  transition: all 0.7s ease-out;
+}
+
+section#services.visible {
+  opacity: 1;
+  transform: translateY(4rem);
+}
 #services {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
