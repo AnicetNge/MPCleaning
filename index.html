@@ -1,140 +1,507 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Service professionnel de nettoyage : bureaux, salles de fêtes, nettoyage général — rapide, fiable et rigoureux."
+    <title>MP Cleaning - L'excellence de la propreté à Yaoundé</title>
+    <script
+      type="module"
+      src="https://unpkg.com/@splinetool/viewer@1.12.34/build/spline-viewer.js"
+    ></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
     />
-    <title>MP Cleaning | Service de Nettoyage</title>
-    <link rel="stylesheet" href="styles/index.css" />
+    <script
+      src="https://kit.fontawesome.com/32bf3d1f79.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <section class="nav">
-      <header>
-        <h1>MP Cleaning</h1>
-        <nav id="navbar">
-          <a href="#hero">Accueil</a>
+    <!-- Header -->
+    <header id="header">
+      <div class="header-container">
+        <a href="#" class="logo">
+          <div class="logo-icon">
+            <img
+              src="./MPCleaning_logo.png"
+              alt="logo"
+              style="width: 64px; height: 64px"
+            />
+          </div>
+          <div class="logo-text">
+            <span class="bold">MP</span><span class="light"> Cleaning</span>
+          </div>
+        </a>
+
+        <nav>
           <a href="#services">Services</a>
-          <a href="#about">À propos</a>
-          <a href="#testimonials">Témoignages</a>
-          <a href="#contact">Contact</a>
+          <a href="#products">Bureautique</a>
+          <a href="#edge">Avantages</a>
+          <a href="#gallery">Galerie</a>
         </nav>
-        <div class="menu-toggle" id="menu-toggle">
-          <span></span><span></span><span></span>
-        </div>
-      </header>
-      <div class="nav_mobile">
-        <a href="#hero">Accueil</a>
+
+        <a href="https://wa.me/237600000000" target="_blank" class="cta-btn">
+          <i class="fa-solid fa-phone"></i> Contact WhatsApp
+        </a>
+
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+          <span id="menuIcon"><i class="fa-solid fa-bars"></i></span>
+        </button>
+      </div>
+
+      <div class="mobile-menu" id="mobileMenu">
         <a href="#services">Services</a>
-        <a href="#about">À propos</a>
-        <a href="#testimonials">Témoignages</a>
-        <a href="#contact">Contact</a>
+        <a href="#products">Bureautique</a>
+        <a href="#edge">Avantages</a>
+        <a href="#gallery">Galerie</a>
+        <a href="https://wa.me/237600000000" target="_blank" class="mobile-cta">
+          <i class="fa-solid fa-phone"></i> Contact WhatsApp
+        </a>
       </div>
-    </section>
-    <section id="hero">
-      <div class="content">
-        <h2>Service de nettoyage professionnel</h2>
-        <p>
-          Bureaux, salles de fêtes, nettoyage avant et après événements — un
-          service impeccable et rapide.
-        </p>
-        <a href="#contact" class="btn">Demander un devis</a>
-      </div>
-    </section>
-    <section id="services">
-      <h2>Nos Services</h2>
-      <div class="service">
-        <div class="image-card">
-          <img
-            src="ressources/images/bureau.png"
-            alt="image illustrant une equipe nettoyant un bureau"
-          />
-        </div>
-        <div class="content-card">
-          <h3>Nettoyage de bureaux</h3>
-          <p>
-            Des espaces de travail propres, sains et agréables pour améliorer la
-            productivité et le bien-être.
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <spline-viewer
+        class="hero-bg"
+        url="https://prod.spline.design/3MhABdNUCZmkSA3v/scene.splinecode"
+      ></spline-viewer>
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="pulse-dot"></span>
+            <span>Premium Cleaning Services</span>
+          </div>
+
+          <h1 class="hero-title">
+            L'excellence de la<br />
+            <span class="gradient-text">propreté</span><br />
+            à Yaoundé
+          </h1>
+
+          <p class="hero-subtitle">
+            Intervention rapide et matériel professionnel pour événements,
+            bureaux et particuliers.
           </p>
-          <a href="#contact" class="btn">Demander un devis</a>
-        </div>
-      </div>
-      <div class="service">
-        <div class="image-card">
-          <img
-            src="ressources/images/salledefete.png"
-            alt="image illustrant une equipe nettoyant un bureau"
-          />
-        </div>
-        <div class="content-card">
-          <h3>Nettoyage de salles de fêtes</h3>
-          <p>
-            Avant et après vos événements, nous remettons tout en ordre pour un
-            lieu éclatant.
-          </p>
-          <a href="#contact" class="btn">Demander un devis</a>
-        </div>
-      </div>
-      <div class="service">
-        <div class="image-card">
-          <img
-            src="ressources/images/general.png"
-            alt="image illustrant une equipe nettoyant un bureau"
-          />
-        </div>
-        <div class="content-card">
-          <h3>Nettoyage général</h3>
-          <p>
-            Maisons, magasins, vitres — nous nous occupons de tout avec minutie
-            et efficacité.
-          </p>
-          <a href="#contact" class="btn">Demander un devis</a>
+
+          <div class="hero-buttons">
+            <a href="#footer" class="btn-primary">
+              Demander un Devis
+              <span><i class="fa-solid fa-angle-right"></i></span>
+            </a>
+            <a href="#services" class="btn-secondary"> Nos Services </a>
+          </div>
+
+          <div class="trust-badges">
+            <div class="trust-badge">✓ 500+ Clients Satisfaits</div>
+            <div class="trust-badge">🕐 Intervention 24/7</div>
+            <div class="trust-badge">🛡️ Qualité Garantie</div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="about">
-      <h2>À propos de nous</h2>
-      <p>
-        ProClean Agency est une équipe passionnée par la propreté et la
-        satisfaction client. Nous proposons des services de nettoyage fiables,
-        personnalisés et à des prix compétitifs. Notre priorité : offrir un
-        environnement propre et agréable, quelle que soit la taille de la tâche.
-      </p>
+    <!-- Services Section -->
+    <section id="services" class="services">
+      <div class="services-bg"></div>
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Nos Services</span>
+          <h2 class="section-title">
+            Solutions de nettoyage<br />
+            <span class="gradient-text">sur mesure</span>
+          </h2>
+          <p class="section-description">
+            Découvrez notre gamme complète de services professionnels adaptés à
+            tous vos besoins
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon yellow">
+              <i class="fa-solid fa-champagne-glasses"></i>
+            </div>
+            <h3 class="service-title">Nettoyage Événementiel</h3>
+            <p class="service-description">
+              Préparation et remise en état après vos événements. Mariages,
+              conférences, soirées d'entreprise.
+            </p>
+            <ul class="service-features">
+              <li>Avant & après événement</li>
+              <li>Équipe dédiée</li>
+              <li>Matériel professionnel</li>
+            </ul>
+            <a href="#footer" class="service-link">
+              En savoir plus
+              <span><i class="fa-solid fa-square-arrow-up-right"></i></span>
+            </a>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon blue">
+              <i class="fa-solid fa-building"></i>
+            </div>
+            <h3 class="service-title">Entretien de Bureaux</h3>
+            <p class="service-description">
+              Nettoyage régulier et professionnel de vos espaces de travail pour
+              un environnement sain.
+            </p>
+            <ul class="service-features">
+              <li>Contrats flexibles</li>
+              <li>Horaires adaptés</li>
+              <li>Produits écologiques</li>
+            </ul>
+            <a href="#footer" class="service-link">
+              En savoir plus
+              <span><i class="fa-solid fa-square-arrow-up-right"></i></span>
+            </a>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon green">
+              <i class="fa-solid fa-house"></i>
+            </div>
+            <h3 class="service-title">Services aux Particuliers</h3>
+            <p class="service-description">
+              Nettoyage approfondi de votre domicile avec attention aux détails
+              et respect de votre espace.
+            </p>
+            <ul class="service-features">
+              <li>Nettoyage profond</li>
+              <li>Personnel de confiance</li>
+              <li>Satisfaction garantie</li>
+            </ul>
+            <a href="#footer" class="service-link">
+              En savoir plus
+              <span><i class="fa-solid fa-square-arrow-up-right"></i></span>
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="testimonials">
-      <h2>Ce que disent nos clients</h2>
-      <div class="testimonial-slide active">
-        <p>
-          "Service impeccable ! Notre salle de fêtes était comme neuve après
-          leur passage."
-        </p>
-        <h4>— Marie D.</h4>
-      </div>
-      <div class="testimonial-slide">
-        <p>
-          "ProClean s’occupe de nos bureaux chaque semaine, l’équipe est
-          ponctuelle et très professionnelle."
-        </p>
-        <h4>— Entreprise Lumière</h4>
-      </div>
-      <div class="testimonial-slide">
-        <p>
-          "Fiables, rapides et sympathiques. Un service que je recommande à 100%
-          !"
-        </p>
-        <h4>— Kevin L.</h4>
-      </div>
-      <div class="dots">
-        <span class="dot active"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
+    <!-- Products Section -->
+    <section id="products" class="products">
+      <div class="products-bg"></div>
+      <div class="container">
+        <div class="section-header">
+          <span
+            class="section-badge"
+            style="background: rgba(255, 255, 255, 0.1); color: #98ff98"
+          >
+            <i class="fa-solid fa-desktop"></i> Bureautique Premium
+          </span>
+          <h2 class="section-title" style="color: white">
+            Équipements de bureau<br />
+            <span style="color: #ffd700">haute performance</span>
+          </h2>
+          <p
+            class="section-description"
+            style="color: rgba(255, 255, 255, 0.6)"
+          >
+            Découvrez notre sélection d'équipements professionnels pour
+            optimiser votre espace de travail
+          </p>
+        </div>
+
+        <div class="products-grid" id="productsGrid">
+          <!-- Products will be rendered here by JavaScript -->
+        </div>
+
+        <div class="products-nav">
+          <button class="nav-btn" id="prevBtn">
+            <i class="fa-solid fa-angle-left"></i>
+          </button>
+          <div class="nav-dots" id="navDots"></div>
+          <button class="nav-btn" id="nextBtn">
+            <i class="fa-solid fa-angle-right"></i>
+          </button>
+        </div>
       </div>
     </section>
 
-    <script src="scripts/index.js"></script>
+    <!-- Edge Section -->
+    <section id="edge" class="edge">
+      <div class="edge-bg"></div>
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Pourquoi Nous Choisir</span>
+          <h2 class="section-title">
+            L'avantage<br />
+            <span class="gradient-text">MP Cleaning</span>
+          </h2>
+          <p class="section-description">
+            Nous nous distinguons par notre engagement envers l'excellence
+          </p>
+        </div>
+
+        <div class="edge-grid">
+          <div class="edge-card">
+            <div class="edge-icon">
+              <i class="fa-solid fa-cloud-bolt" style="color: #ffd700"></i>
+            </div>
+            <div class="edge-content">
+              <h3 class="edge-title">Rapidité d'intervention</h3>
+              <p class="edge-description">
+                Équipe mobilisée en moins de 2 heures pour les urgences.
+                Disponibilité 24/7 pour répondre à tous vos besoins.
+              </p>
+            </div>
+            <div class="edge-stat">
+              <div class="edge-stat-value">< 2h</div>
+              <div class="edge-stat-label">Temps de réponse</div>
+            </div>
+          </div>
+
+          <div class="edge-card">
+            <div class="edge-icon">
+              <i class="fa-solid fa-gear" style="color: #ffd700"></i>
+            </div>
+            <div class="edge-content">
+              <h3 class="edge-title">Équipement de pointe</h3>
+              <p class="edge-description">
+                Matériel professionnel dernière génération pour des résultats
+                impeccables et durables.
+              </p>
+            </div>
+            <div class="edge-stat">
+              <div class="edge-stat-value">100%</div>
+              <div class="edge-stat-label">Matériel pro</div>
+            </div>
+          </div>
+
+          <div class="edge-card">
+            <div class="edge-icon">
+              <i class="fa-solid fa-flask" style="color: #ffd700"></i>
+            </div>
+            <div class="edge-content">
+              <h3 class="edge-title">Produits Spécifiques</h3>
+              <p class="edge-description">
+                Gamme de produits écologiques et certifiés, adaptés à chaque
+                type de surface et de besoin.
+              </p>
+            </div>
+            <div class="edge-stat">
+              <div class="edge-stat-value">Éco</div>
+              <div class="edge-stat-label">Certifié</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Galerie</span>
+          <h2 class="section-title">
+            Avant & Après<br />
+            <span class="gradient-text">nos interventions</span>
+          </h2>
+          <p class="section-description">
+            Faites glisser pour découvrir la transformation
+          </p>
+        </div>
+
+        <div class="comparison-slider" id="comparisonSlider">
+          <img
+            src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80"
+            alt="After"
+            class="slider-image"
+          />
+          <div class="slider-before-container" id="beforeContainer">
+            <img
+              src="https://images.unsplash.com/photo-1600585152220-90363fe7e115?w=800&q=80"
+              alt="Before"
+              class="slider-image"
+            />
+          </div>
+          <div class="slider-handle" id="sliderHandle"></div>
+          <div class="slider-label before">Avant</div>
+          <div class="slider-label after">Après</div>
+          <div class="slider-title">Bureau Professionnel</div>
+        </div>
+
+        <p
+          style="
+            text-align: center;
+            color: rgba(0, 35, 102, 0.4);
+            font-size: 0.875rem;
+            margin-top: 2rem;
+          "
+        >
+          <i class="fa-solid fa-angle-left"></i> Faites glisser le curseur pour
+          comparer <i class="fa-solid fa-angle-right"></i>
+        </p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer" class="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="footer-grid">
+            <div class="footer-info">
+              <h2>
+                Demandez votre<br />
+                <span class="yellow">devis gratuit</span>
+              </h2>
+              <p>
+                Remplissez le formulaire et notre équipe vous contactera dans
+                les plus brefs délais.
+              </p>
+
+              <div class="contact-info">
+                <div class="contact-item">
+                  <div class="contact-icon">
+                    <i class="fa-solid fa-map-pin" style="color: white"></i>
+                  </div>
+                  <div class="contact-details">
+                    <div class="contact-label">Adresse</div>
+                    <div class="contact-value">
+                      Quartier Bastos, Yaoundé, Cameroun
+                    </div>
+                  </div>
+                </div>
+
+                <div class="contact-item">
+                  <div class="contact-icon">
+                    <i class="fa-solid fa-phone" style="color: white"></i>
+                  </div>
+                  <div class="contact-details">
+                    <div class="contact-label">Téléphone</div>
+                    <div class="contact-value">+237 6XX XXX XXX</div>
+                  </div>
+                </div>
+
+                <div class="contact-item">
+                  <div class="contact-icon">
+                    <i class="fa-solid fa-at" style="color: white"></i>
+                  </div>
+                  <div class="contact-details">
+                    <div class="contact-label">Email</div>
+                    <div class="contact-value">contact@mpcleaning.cm</div>
+                  </div>
+                </div>
+
+                <div class="contact-item">
+                  <div class="contact-icon">
+                    <i class="fa-solid fa-clock" style="color: white"></i>
+                  </div>
+                  <div class="contact-details">
+                    <div class="contact-label">Horaires</div>
+                    <div class="contact-value">Lun-Sam: 7h - 20h</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="social-links">
+                <a href="#" class="social-link"
+                  ><i class="fa-brands fa-facebook"></i
+                ></a>
+                <a href="#" class="social-link"
+                  ><i class="fa-brands fa-square-instagram"></i
+                ></a>
+                <a href="#" class="social-link"
+                  ><i class="fa-brands fa-square-twitter"></i
+                ></a>
+                <a href="#" class="social-link"
+                  ><i class="fa-brands fa-linkedin"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="footer-form" id="contactForm">
+              <div class="success-message" id="successMessage">
+                <div class="success-icon">✓</div>
+                <h3>Merci !</h3>
+                <p>Nous vous contacterons très bientôt.</p>
+              </div>
+
+              <form id="quoteForm">
+                <div class="form-grid">
+                  <div class="form-group">
+                    <label class="form-label">Nom complet</label>
+                    <input
+                      type="text"
+                      class="form-input"
+                      placeholder="Votre nom"
+                      required
+                    />
+                  </div>
+
+                  <div class="form-group">
+                    <label class="form-label">Email</label>
+                    <input
+                      type="email"
+                      class="form-input"
+                      placeholder="votre@email.com"
+                      required
+                    />
+                  </div>
+
+                  <div class="form-group">
+                    <label class="form-label">Téléphone</label>
+                    <input
+                      type="tel"
+                      class="form-input"
+                      placeholder="+237 6XX XXX XXX"
+                    />
+                  </div>
+
+                  <div class="form-group">
+                    <label class="form-label">Service</label>
+                    <select class="form-select">
+                      <option value="">Sélectionner un service</option>
+                      <option value="event">Nettoyage Événementiel</option>
+                      <option value="office">Entretien de Bureaux</option>
+                      <option value="home">Services aux Particuliers</option>
+                      <option value="equipment">Vente d'Équipement</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group full-width">
+                    <label class="form-label">Message</label>
+                    <textarea
+                      class="form-input form-textarea"
+                      placeholder="Décrivez votre projet..."
+                      required
+                    ></textarea>
+                  </div>
+                </div>
+
+                <button type="submit" class="form-submit">
+                  <i class="fa-solid fa-envelope" style="color: white"></i>
+                  Envoyer la demande
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="footer-bottom-content">
+            <p class="footer-copyright">
+              © 2024 MP Cleaning. Tous droits réservés.
+            </p>
+            <div class="footer-links">
+              <a href="#" class="footer-link">Politique de confidentialité</a>
+              <a href="#" class="footer-link">Conditions d'utilisation</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
